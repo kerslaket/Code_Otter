@@ -1,0 +1,102 @@
+<!Doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Code-Otter</title>
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+
+</head>
+	
+<body>
+
+	<nav class="navbar navbar-default">
+		<!-- Brand and toggle get grouped for better mobile display -->
+	
+		
+		<div class="container">
+
+			<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><i class="fas fa-paw"></i>   Code_Otter</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav">
+			  </ul>
+
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="lessons.html">Lessons</a></li>
+				<li><a href="signin.html">Sign In</a></li>
+			  </ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+	
+	
+	<div class="content">
+		
+		<div class="container lessonSection">
+			<a href="lesson_3_2.html"><h4 class = "prev" >Previous<h4></a>
+			<a href="lesson_3_4.html"><h4 class = "next" >Next<h4></a>
+		
+			<h1>While Loops</h1>
+			
+			<div class="lessonVid">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/jX6kn9_U8qk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			
+			<h3>Introduction</h3>
+			
+			<p>While Loops are going to be very easy to explain and understand once you’ve got to grips with for loops. The difference between the two is that for loops pre-specify how many iterations they go through, whereas while loops keep iterating until a certain criteria is met, similar to an if statement.</p>
+			
+			<h3>While Loops</h3>
+			
+			<p>While loops are useful for making sure a user enters the correct information, for example if your program asks for someone's age, you’re gonna want to make sure they don’t enter an age below zero since your age can’t be negative. This is what the code below does, check it out:
+
+				<br><br><img class = "lessonIMG" src = "lesson_images/section3/image3_1.png"><br><br>
+			</p>
+
+			<p>
+					So let's examine this code. The first line say “age = -1”. This is because the while loop will only execute while age is less than zero so we have to make sure it has an initial value that meets that criteria. “While age < 0” states that while the age variable is less than zero, which it is since the age has been set to -1. Then inside the while loop our code asks for an input, asking for the users age, and assigns it to the variable age. This way if the user enters an age that is below zero than the while loop criteria will still be fulfilled and ask the user for their age again. Try running it for yourself. Easy right? Once you've got your head around for loops while loops are pretty self explanatory. Feel free to experiment with while loops to get a better understanding.
+			</p>
+
+
+
+	
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+		  <h3>Code-Otter</h3>
+		  	<div class="socialLinks">
+		 	 <i class="fab fa-facebook"></i>
+		 	 <i class="fab fa-twitter-square"></i>
+		 	 <i class="fab fa-google-plus-square"></i>
+		 	 <i class="fas fa-envelope-square"></i>
+			</div>
+		</div>
+	  </footer>
+
+
+
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+	
+</body>
+</html>

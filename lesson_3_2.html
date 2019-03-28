@@ -1,0 +1,122 @@
+<!Doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Code-Otter</title>
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+
+</head>
+	
+<body>
+
+	<nav class="navbar navbar-default">
+		<!-- Brand and toggle get grouped for better mobile display -->
+	
+		
+		<div class="container">
+
+			<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><i class="fas fa-paw"></i>   Code_Otter</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav">
+			  </ul>
+
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="lessons.html">Lessons</a></li>
+				<li><a href="signin.html">Sign In</a></li>
+			  </ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+	
+	
+	<div class="content">
+		
+		<div class="container lessonSection">
+			<a href="lesson_3_1.html"><h4 class = "prev" >Previous<h4></a>
+			<a href="lesson_3_3.html"><h4 class = "next" >Next<h4></a>
+		
+			<h1>For Loops</h1>
+			
+			<div class="lessonVid">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/jX6kn9_U8qk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			
+			<h3>Introduction</h3>
+			
+			<p>For Loops are a way of iterating through a set/sequence of items. This can be letters in a string, a range of numbers, and more that will be covered better in the Advanced section of this tutorial. </p>
+			
+			<h3>Basic For Loop</h3>
+			
+			<p>The syntax for a for loop consists of “for a in b”. “a” is essentially a new variable that you can reference inside your for loop that's incremented with each loop. Essentially it tells you what iteration in the loop you are. Depending on the data you're working with in “b” its usually either a number or a string. For example check out the code below.
+				<br><br><img class = "lessonIMG" src = "lesson_images/section3/image2_1.png"><br><br>
+			</p>
+
+			<p>
+					This simple piece of code takes a string variable called myString and then iterates through each letter of the string. This is easy with python since it automatically recognises the string in the for loop and assumes you’re gonna want to iterate through each letter. In each iteration the program prints the letter. This is because the for loop repeats the code inside the loop for each value inside the second argument, in this case myString. For example if you changed the value of myString to a longer word the loop would still output every character from that string. Give it a go. Your output should look something like this.
+					<br><br><img class = "lessonIMG" src = "lesson_images/section3/image2_2.png"><br><br>
+			</p>
+
+			<h3>Range</h3>
+
+			<p>
+					Something you’ll end up using frequently with for loops in python is a function called the range() function. The range function is placed in the “b” section of the for loop and allows you to specify a range of numbers you want to iterate or “loop” through. For example the code for x in range(6) iterates through 0 to 5 since it stops before the number you specify. You can also specify a specific starting number by separating it and then last number with a comma. This is shown in the code below:
+		
+					<br><br><img class = "lessonIMG" src = "lesson_images/section3/image2_3.png"><br><br>
+
+					Python also has something called <b>Break Statements</b>. These allow you to exit the loop once a specific criteria is met by combining it with an if statement. This is presented below.
+					<br><br><img class = "lessonIMG" src = "lesson_images/section3/image2_4.png"><br><br>
+
+					This ends the loop once x is equal to 4. Obviously this isn’t a practical use of this application but once we get more in depth break statements become a very useful tool. 
+
+					<br>You can also add a third argument to the range function that allows you to change what rate the for loop increments. This means instead of iterating through every number in the range you can just loop through every second number, or every fifth number. It's also possible to nest for loops just like we nested if statements inside each other. Both of these applications are presented in the below example.
+					<br><br><img class = "lessonIMG" src = "lesson_images/section3/image2_5.png"><br><br>
+					<br><br><img class = "lessonIMG" src = "lesson_images/section3/image2_6.png"><br><br>
+			</p>
+
+			<p>
+					This may seem complicated but if you study and test the loop for yourself you should understand it. It start by looping through the numbers 1 to 30 in increments of 5, but then nested inside each increment outputs the value the parent loop is currently on, plus the next 4 values. This in the end prints every value from 1 to 30. Again not the most useful application but its an important concept to understand.
+			</p>
+
+
+	
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+		  <h3>Code-Otter</h3>
+		  	<div class="socialLinks">
+		 	 <i class="fab fa-facebook"></i>
+		 	 <i class="fab fa-twitter-square"></i>
+		 	 <i class="fab fa-google-plus-square"></i>
+		 	 <i class="fas fa-envelope-square"></i>
+			</div>
+		</div>
+	  </footer>
+
+
+
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+	
+</body>
+</html>

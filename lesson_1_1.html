@@ -1,0 +1,160 @@
+<!Doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Code-Otter</title>
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+
+</head>
+	
+<body>
+
+	<nav class="navbar navbar-default">
+		<!-- Brand and toggle get grouped for better mobile display -->
+	
+		
+		<div class="container">
+
+			<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><i class="fas fa-paw"></i>   Code_Otter</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav">
+			  </ul>
+
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="lessons.html">Lessons</a></li>
+				<li><a href="signin.html">Sign In</a></li>
+			  </ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+	
+	
+	<div class="content">
+		
+		<div class="container lessonSection">
+				<a href="lesson_0_3.html"><h4 class = "prev" >Previous<h4></a>
+				<a href="lesson_1_2.html"><h4 class = "next" >Next<h4></a>
+		
+			<h1>Introduction and Setup</h1>
+			
+			<div class="lessonVid">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/jX6kn9_U8qk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			
+			<h3>Introduction</h3>
+			
+			<p>Hi and welcome to my python tutorial. This tutorial will guide you through how to start
+			and master python from the ground up assuming you have no prior programming knowledge. This 
+			first tutorial guides you through the installation and first steps of python and the next tutorials 
+			will begin to demonstrate how to use python and build your programming knowledge.
+			</p>
+			
+			<h3>Installation</h3>
+			
+			<p>Go to https://www.python.org/ and navigate to the downloads page.<br><br>
+			<img class = "lessonIMG" src = "lesson_images/section0/image1_1.png"><br><br>
+			Scroll down and find the download link for the latest version of python version 3 (Python 3.6.5 at 
+			the time of writing) and click the link that says download to open the next page. <br><br>
+			<img class = "lessonIMG" src = "lesson_images/section0/image1_2.png"><br><br>
+			Scroll down and find the appropriate installer for your operating system. This will likely be 
+			“Windows x86-64 executable installer” if you’re using windows or “macOS 64-bit installer” if 
+			you’re using a mac, but be sure to check if you’re unsure. Click the link and the download 
+			should start automatically.
+			</p>
+			
+			<p>
+			The reason we are using python 3 over python 2 is that python 2, although still updated,
+			is considered a legacy language and isn’t gaining new features like python 3 and although 
+			the languages are quite similar some syntax differs. The main argument for why a lot of people
+			still use python 2 is library support but this is getting less relevant day by day. Most
+			importantly after learning python 3 python 2 will be incredibly easy to pick up in the future
+			if you ever need to use it.<br><br>
+			<img class = "lessonIMG" src = "lesson_images/section0/image1_3.png"><br><br>
+			Now run the installer and follow the instructions.
+			</p>
+			
+			<h3> Windows Installation </h3>
+			
+			<p>
+			<img class = "lessonIMG" src = "lesson_images/section0/image1_4.png"><br><br>
+			When installing Python make sure to tick the box that says “Add Python to Path” as this will be 
+			useful in the future. Although this can be done later on it can be difficult and confusing if you 
+			aren’t familiar with the PATH environment variable in windows. Hit Install Now or do a custom 
+			installation if you want to change your install location, but make sure not to uncheck any components
+			like PIP or IDLE. When the installation is complete hit close. If provided with the option select the 
+			option to extend your path max length. Although this is unessential it may benefit you later.
+			</p>
+			
+			<h3>Running Shell For The First Time</h3>
+			
+			<p>Congratulations! You have now installed python. Along with python the installation provides useful tools,
+			the most important of which is a program called IDLE. IDLE is the default ide (integrated development environment)
+			that is provided with python. An ide is essentially a glorified text editor that provides additional features like 
+			“syntax highlighting” which highlights certain parts of text in different colours to identify their functions as well
+			as point out possible errors in your code and basic debugging tools. IDLE is a very clutter free beginner oriented ide 
+			as due to its lack of excessive features it isn’t too overwhelming.
+			<br><br>
+            Search for a open IDLE and you should be greeted with the shell. The shell will be greater explained in the next tutorial 
+			but it is what is known as an interpreter. This translates your python code into code that can be understand and executed 
+			by your operating system. Essentially it runs your programs. Shell is what is known as an “interactive shell”, which 
+			basically means we can use it as a sort of testing ground or scratch pad for testing certain lines of code. 
+
+			<br><br><img class = "lessonIMG" src = "lesson_images/section0/image1_5.png"><br><br>
+
+			For example, if we type print (“This is the shell”) and hit enter the shell will output or 
+			“print” the text back at us. 
+			
+			<br><br><img class = "lessonIMG" src = "lesson_images/section0/image1_6.png"><br><br>
+
+			The text inside the quotation marks can then be changed to anything you want. Go ahead and try.
+			</p>
+			
+			<h3>Outroduction</h3>
+			
+			<p>In this tutorial you have successfully downloaded and installed python and executed your first line of code in the shell. 
+			Next tutorial we will go more in depth into the operation of IDLE and the shell.
+			
+			</p>
+	
+	
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+		  <h3>Code-Otter</h3>
+		  	<div class="socialLinks">
+		 	 <i class="fab fa-facebook"></i>
+		 	 <i class="fab fa-twitter-square"></i>
+		 	 <i class="fab fa-google-plus-square"></i>
+		 	 <i class="fas fa-envelope-square"></i>
+			</div>
+		</div>
+	  </footer>
+
+
+
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+	
+</body>
+</html>

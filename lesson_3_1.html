@@ -1,0 +1,148 @@
+<!Doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Code-Otter</title>
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+
+</head>
+	
+<body>
+
+	<nav class="navbar navbar-default">
+		<!-- Brand and toggle get grouped for better mobile display -->
+	
+		
+		<div class="container">
+
+			<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><i class="fas fa-paw"></i>   Code_Otter</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav">
+			  </ul>
+
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="lessons.html">Lessons</a></li>
+				<li><a href="signin.html">Sign In</a></li>
+			  </ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+	
+	
+	<div class="content">
+		
+		<div class="container lessonSection">
+			<a href="lesson_3_0.html"><h4 class = "prev" >Previous<h4></a>
+			<a href="lesson_3_2.html"><h4 class = "next" >Next<h4></a>
+		
+			<h1>If Statements</h1>
+			
+			<div class="lessonVid">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/jX6kn9_U8qk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			
+			<h3>Introduction</h3>
+			
+			<p>If statements are one of the main building blocks of programming. They basically allow you to write lines or blocks of code that are only executed if a certain condition is fulfilled, and ignored if they’re not. These in combination with boolean operators can lead to many opportunities. Boolean operators are essentially mathematical operations that have only 2 possible results, true or false, 1 or 0, on or off .etc. These operators are listed below.</p>
+			
+			<p>
+				<ul>
+					<li>Equals: a == b</li>
+					<li>Not Equals: a != b</li>
+					<li>Less Than: a < b</li>
+					<li>More Than: a > b</li>
+				</ul>
+
+			</p>
+
+			<p>The reserved words: and, or, and not can be used to combine multiple operators.</p>
+			
+			<h3>If Statements</h3>
+			
+			<p>The simple if statement works by using the keyword if, followed by the conditional criteria, followed by a colon :, followed by a line of code that is only executed IF the conditional criteria is fulfilled. This line of code is indented on another line. The way you can indent code using IDLE is by using the tab key. IDLE also should indent automatically if you hit enter after a colon. A demonstration of a simple if statement is presented below.
+			<br><br><img class = "lessonIMG" src = "lesson_images/section3/image1_1.png"><br><br>
+			</p>
+
+			<p>
+				Try changing the value of b and a. If b is lower than a the program should output nothing. But what if we want the program to give us a different message if b is less than a? Well that’s where Else statements come in.
+			</p>
+
+			<h3>Else Statements</h3>
+
+			<p>
+				The else statement can be used following an If statement. It allows you to provide another section of code that's performed if the conditional criteria for the If statement is not met. This means we can provide an output for when b is smaller than a. Like in the example below. 
+		
+			<br><br><img class = "lessonIMG" src = "lesson_images/section3/image1_2.png"><br><br>
+			</p>
+
+			<p>
+				Now what if b and a are the same value? Give it a go. See how it still says that b is smaller than a even though they are the same value. We need another conditional statement for if b and a are the same value. Now one way this could be done would be by just adding another If statement like the one below.
+				<br><br><img class = "lessonIMG" src = "lesson_images/section3/image1_3.png"><br><br>
+			</p>
+
+			<p>
+				The problem with this is that its bad programming practice. This is because if b is more than a, the condition for the first If statement is met, meaning we don’t want to waste the programming power to execute the next if statement. Yet this program still executes the second if statement even though we know it isn’t true. So to get past this we use an Else If statement.
+			</p>
+
+			<h3>Else If Statements</h3>
+
+			<p>
+					Else If Statements allow you to write another set of conditional criteria incase the first If statement is not met. This means that we can add another if statement that will only execute if the first one fails, meaning we won't have to execute unnecessary code. Check the example below.
+					<br><br><img class = "lessonIMG" src = "lesson_images/section3/image1_4.png"><br><br>			
+			</p>
+
+			<p>
+				You can use as many elif statements that you like, for example you could add another that detects if a and b are a negative number. Feel free to give this a go. You can even start nesting if statements. This is where you put if statements inside the initial statements code block, like in the example below. 	
+			<br><br><img class = "lessonIMG" src = "lesson_images/section3/image1_5.png"><br><br>
+			</p>
+
+			<p>
+					You can also try combining multiple boolean statements in one If statement. There's a lot of variation in what you can do with loops and conditional statements. As a result this is where a lot of people start getting lost with programming so do you best to stick with this and do your own research, as well as going over this lesson again if you still don’t quite grasp the concept. 
+			</p>
+
+			
+	
+
+
+	
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+		  <h3>Code-Otter</h3>
+		  	<div class="socialLinks">
+		 	 <i class="fab fa-facebook"></i>
+		 	 <i class="fab fa-twitter-square"></i>
+		 	 <i class="fab fa-google-plus-square"></i>
+		 	 <i class="fas fa-envelope-square"></i>
+			</div>
+		</div>
+	  </footer>
+
+
+
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+	
+</body>
+</html>

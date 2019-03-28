@@ -1,0 +1,163 @@
+<!Doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Code-Otter</title>
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+
+</head>
+	
+<body>
+
+	<nav class="navbar navbar-default">
+		<!-- Brand and toggle get grouped for better mobile display -->
+	
+		
+		<div class="container">
+
+			<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><i class="fas fa-paw"></i>   Code_Otter</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav">
+			  </ul>
+
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="lessons.html">Lessons</a></li>
+				<li><a href="signin.html">Sign In</a></li>
+			  </ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+	
+	
+	<div class="content">
+		
+		<div class="container lessonSection">
+				<a href="lesson_2_3.html"><h4 class = "prev" >Previous<h4></a>
+				<a href="lesson_3_0.html"><h4 class = "next" >Next<h4></a>
+		
+			<h1>First Exercises</h1>
+			
+			
+			
+			<p>
+				Try creating the programs below. Don’t worry if you struggle the answers are on the next page for reference. Just make sure you don’t cheat, make sure you understand what you’re implementing before moving on to the next section.
+
+			</p>
+
+			<h3>Task 1 - Complimenter Program</h3>
+
+			<p>
+				For this simple program, just have a user enter their name, and reply to them with a compliment. For example if the user enters the name “Toby” your program could reply “You Look Very Handsome Today Toby”. 
+			</p>
+
+			<p>Hint: You should probably only require one variable and a print statement. The variable should be used to hold a string given by the user.</p>
+
+			<h3>Task 2 - Age Calculator</h3>
+
+			<p>
+				Create a program that has a user enter their age in years and then outputs their rough age in days. Try to make the user experience as pleasant as possible.
+			</p>
+
+			<p>Hint: You’ll need to store an integer input by the user and then times it by 365. Or if you wanna be a pretentious ass 365.25. </p>
+
+			<h3>Task 3 - Multiplier</h3>
+
+			<p>
+				Create a program that takes two integers from the user and multiplies them together, and then returns the output.
+			</p>
+
+			<p>Hint: Nice try you’re on your own for this one</p>
+
+			<h3>Extension</h3>
+
+			<p>
+				Improve the multiplier program by also returning the result of the two numbers being divided, maybe even add some other mathematical functions just for fun. Then maybe allow for the use of more than just two numbers.
+			</p>
+
+			<h1>Solutions</h1>
+
+		<h3>Task 1 - Complimenter</h3>
+
+		<p>
+			name = input("Please Enter Your Name: ")
+			print("Hi " + name + ", You look really handsome today")
+		</p>
+
+		<h3>Task 2 - Age Calculator</h3>
+
+		<p>
+			age = int(input("Please Enter Your Age"))
+			print("You are " + str(age * 365.25) + " Days Old")
+				
+		</p>
+
+		<h3>Task 3 - Multiplier</h3>
+
+		<p>
+			num1 = int(input("Please Enter a Number: "))
+			num2 = int(input("Please Enter another Number: "))
+			print(str(num1) + " multiplied by " + str(num2) + " is " + str(num1 * num2))
+	
+		</p>
+
+		<h3>Extension</h3>
+
+		<p>
+				num1 = int(input("Please Enter a Number: "))
+				num2 = int(input("Please Enter Another Number: "))
+				num3 = int(input("Please Enter yet Another Number: "))
+				
+				print(str(num1) + " multiplied by " + str(num2)  + " multiplied by " + str(num3) + " is " + str(num1 * num2 * num3))
+				print(str(num1) + " divided by " + str(num2)  + " divided " + str(num3) + " is " + str(num1 / num2 / num3))
+			
+		</p>
+	
+	
+		</div>
+
+		
+		
+		
+
+	</div>
+
+
+
+	<footer class="footer">
+		<div class="container">
+		  <h3>Code-Otter</h3>
+		  	<div class="socialLinks">
+		 	 <i class="fab fa-facebook"></i>
+		 	 <i class="fab fa-twitter-square"></i>
+		 	 <i class="fab fa-google-plus-square"></i>
+		 	 <i class="fas fa-envelope-square"></i>
+			</div>
+		</div>
+	  </footer>
+
+
+
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+	
+</body>
+</html>

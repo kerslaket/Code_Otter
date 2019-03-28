@@ -1,0 +1,217 @@
+<!Doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Code-Otter</title>
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+
+</head>
+	
+<body>
+
+	<nav class="navbar navbar-default">
+		<!-- Brand and toggle get grouped for better mobile display -->
+	
+		
+		<div class="container">
+
+			<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><i class="fas fa-paw"></i>   Code_Otter</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav">
+			  </ul>
+
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="lessons.html">Lessons</a></li>
+				<li><a href="signin.html">Sign In</a></li>
+			  </ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+	
+	
+	<div class="content">
+		
+		<div class="container lessonSection">
+				<a href="lesson_3_4.html"><h4 class = "prev" >Previous<h4></a>
+				<a href="lesson_0_1.html"><h4 class = "next" >Next<h4></a>
+		
+			<h1>Using For Loops</h1>
+			
+			<p>
+					Try creating the programs below. Don’t worry if you struggle the answers are on the next page for reference. Just make sure you don’t cheat, make sure you understand what you’re implementing before moving on to the next section.
+			</p>
+
+			<h3>Task 1 - Multiplication Identification</h3>
+
+			<p>
+					Make a program that takes an integer as an input from the user and then write multiple if/elif/else statements. Have the program output a message if the number is a multiple of 4. Have the program output another message if it is a multiple of 5. Have the program output a different message if it is a multiple of both. If the number is a multiple of neither then print yet another message.
+			</p>
+
+			
+			<h3>Task 2 - Dice Roll Game Extension</h3>
+
+			<p>
+				Add a for loop to the 2 player dice roll game we made so that each player rolls 3 dice. Then compare the highest score of each player to see who wins.
+			</p>
+
+
+			<h3>Task 3 - Text Adventure</h3>
+
+			<p>
+				A text adventure is a game that relies entirely on outputting text to the user, giving them several options, and then outputting results based on the decision the user made. Similar to a choose your own adventure book. These were commonly made games back before computers were capable of intensive graphics and relied heavily on the users imagination. Do some research into these, particularly looking up the game Zork, and make your own version using If Else statements. No need to go overboard feel free to limit yourself to just 2 or 3 paths. 
+			</p>
+
+			<h3>Extension</h3>
+
+			<p>
+				Add a while loop to your text adventure so that when the user dies or fails they get the option to go back to the beginning and start again. 
+			</p>
+
+			<h1>Solutions</h1>
+
+		<h3>Task 1 - Multiplication Identification</h3>
+
+		<p>
+				num = int(input("Please Enter A Number: "))
+
+				if (num % 4 == 0) and (num % 5 == 0):
+					print(str(num) + " is a multiple of 4 and 5")
+				elif (num % 4 == 0):
+					print(str(num) + " is a multiple of 4")
+				elif (num % 5 == 0):
+					print(str(num) + " is a multiple of 5")
+				else:
+					print(str(num) + " is not a multiple of 5 nor 4")
+				
+		</p>
+
+		<h3>Task 2 - Dice Roll Game Extension</h3>
+
+		<p>
+				import random
+
+				player1 = player2 = input("Player 1 Please Enter Your Name: ")
+				while player2 == player1:
+					player2 = input("Player 2 Please Enter Your Name: ")
+					if player2 == player1:
+						print("Please Enter A Different Name")
+				
+				player1FinalDice = 0
+				player2FinalDice = 0
+				
+				for x in range(1,4):
+					input("Player 1, press any key to roll the dice: ")
+					player1Dice = random.randint(1,6)
+					print(player1 + " rolled " + str(player1Dice))
+					if player1Dice > player1FinalDice:
+						player1FinalDice = player1Dice
+				
+					input("Player 2, press any key to roll the dice: ")
+					player2Dice = random.randint(1,6)
+					print(player2 + " rolled " + str(player2Dice))
+					if player2Dice > player2FinalDice:
+						player2FinalDice = player2Dice
+						
+				
+				
+				if player1FinalDice > player2FinalDice:
+					print("Player1 Wins")
+				elif player2FinalDice > player1FinalDice:
+					print("player2 Wins")
+				else:
+					print("It's a Tie")
+				
+		</p>
+
+		<h3>Task 3 - Text Adventure</h3>
+
+		<p>
+				userInput = input(("You're Starving and Feel Faint. You Wonder Through The Trees and Enter A House In A Forest. Do You Go Upstairs(1) Or Into The Kitchen(2)?: "))
+				if userInput == "1":
+					print("You Head Upstairs And Find A Body. You Can't Eat This")
+					print("Game Over!!!")
+				if userInput == "2":
+					userInput = input(("You Head Into The Kitchen. You See A Basement and a Fully Stocked Fridge. Do You Enter The Basement(1) or Peruse the Fridge(2)?: "))
+					if userInput == "1":
+						print("You Fall Down The Basement Stairs And Break Your Legs. Now You'll Never Be Full!!")
+						print("Game Over!!!")
+					if userInput == "2":
+						print("You Find A Sandwhich. Nom Nom Nom")
+						print("You Win!!!")
+				
+		</p>
+
+		<h3>Extension</h3>
+
+		<p>
+				gameOver = True
+
+				while gameOver:
+				
+					userInput = input(("You're Starving and Feel Faint. You Wonder Through The Trees and Enter A House In A Forest. Do You Go Upstairs(1) Or Into The Kitchen(2)?: "))
+					if userInput == "1":
+						print("You Head Upstairs And Find A Body. You Can't Eat This")
+						print("Game Over!!!")
+					if userInput == "2":
+						userInput = input(("You Head Into The Kitchen. You See A Basement and a Fully Stocked Fridge. Do You Enter The Basement(1) or Peruse the Fridge(2)?: "))
+						if userInput == "1":
+							print("You Fall Down The Basement Stairs And Break Your Legs. Now You'll Never Be Full!!")
+							print("Game Over!!!")
+						if userInput == "2":
+							print("You Find A Sandwhich. Nom Nom Nom")
+							print("You Win!!!")
+					userInput = input(("Would You Like To Play Again? Yes(Y) or No(N): "))
+					if userInput == "N":
+						gameOver = False
+				
+		</p>
+	
+	
+		</div>
+
+		
+		
+		
+
+	</div>
+
+
+
+	<footer class="footer">
+		<div class="container">
+		  <h3>Code-Otter</h3>
+		  	<div class="socialLinks">
+		 	 <i class="fab fa-facebook"></i>
+		 	 <i class="fab fa-twitter-square"></i>
+		 	 <i class="fab fa-google-plus-square"></i>
+		 	 <i class="fas fa-envelope-square"></i>
+			</div>
+		</div>
+	  </footer>
+
+
+
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+	
+</body>
+</html>

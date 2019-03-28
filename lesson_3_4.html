@@ -1,0 +1,122 @@
+<!Doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Code-Otter</title>
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+
+</head>
+	
+<body>
+
+	<nav class="navbar navbar-default">
+		<!-- Brand and toggle get grouped for better mobile display -->
+	
+		
+		<div class="container">
+
+			<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><i class="fas fa-paw"></i>   Code_Otter</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav">
+			  </ul>
+
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="lessons.html">Lessons</a></li>
+				<li><a href="signin.html">Sign In</a></li>
+			  </ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+	
+	
+	<div class="content">
+		
+		<div class="container lessonSection">
+			<a href="lesson_3_3.html"><h4 class = "prev" >Previous<h4></a>
+			<a href="lesson_3_tasks.html"><h4 class = "next" >Next<h4></a>
+		
+			<h1>2 Player Dice Roll Program</h1>
+			
+			<div class="lessonVid">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/jX6kn9_U8qk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			
+			<h3>Introduction</h3>
+			
+			<p>Now we're gonna bring together all of the conditional statements and loops that we’ve learnt to in this section by using for loops, while loops, and if statements, to make a 2 player version of the dice roll program we made at the end of the last section</p>
+			
+			<h3>0utline</h3>
+
+			<p>
+					So for this we’re going to need several variables. Strings to store the names of each player, and integer variables to store the values of their dice rolls. We are also gonna need a while loop that we’re gonna use to make sure that player 2 enters a different name to player 1, as well as several if else statements to determine which player rolled the higher number. This should be possible to do by yourself with a little research, but also feel free to sit back and follow along to this tutorial and then customize the program or improve it any way you want.
+			</p>
+
+			<h3>Creating the Variables</h3>
+			
+			<p>
+					So we’re going to start by creating the variables we specified above.  We need two string inputs from the user and then get two random integers to represent the dice rolls. Let’s also add some nice print statements to make the user experience nicer. Don’t forget to import the random module.
+				<br><br><img class = "lessonIMG" src = "lesson_images/section3/image4_1.png"><br><br>
+			</p>
+
+			<h3>Adding the Conditionals</h3>
+			
+			<p>
+				Okay now we can add the if statements to output which player wins based on the dice roll. This is demonstrated below.
+				<br><br><img class = "lessonIMG" src = "lesson_images/section3/image4_2.png"><br><br>
+			</p>
+
+			<p>
+				Finally we have to add a while loop to make sure that player 1 and 2 have different names. We do this by first assigning the player2 variable to have the same value as player1 when player1 sets their name. The prompt to get player 2’s user name should then be placed in a while loop that executes while player2 has the same value as player1. Inside this while loop we should also use an if statement so that if the player1 and player2 have the same value we can prompt the user to enter a different name before the loop starts again.
+				<br><br><img class = "lessonIMG" src = "lesson_images/section3/image4_3.png"><br><br>
+			</p>
+
+			<p>
+					So your program should look something like above. Feel free to test it out and keep playing around with the code and improving and changing everything in any way you want and then carry on with the tutorials.
+			</p>
+
+			
+
+
+
+	
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+		  <h3>Code-Otter</h3>
+		  	<div class="socialLinks">
+		 	 <i class="fab fa-facebook"></i>
+		 	 <i class="fab fa-twitter-square"></i>
+		 	 <i class="fab fa-google-plus-square"></i>
+		 	 <i class="fas fa-envelope-square"></i>
+			</div>
+		</div>
+	  </footer>
+
+
+
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+	
+</body>
+</html>
