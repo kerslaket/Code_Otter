@@ -1,0 +1,134 @@
+<!Doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Code-Otter</title>
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+
+</head>
+	
+<body>
+
+	<nav class="navbar navbar-default">
+		<!-- Brand and toggle get grouped for better mobile display -->
+	
+		
+		<div class="container">
+
+			<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><i class="fas fa-paw"></i>   Code_Otter</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav">
+			  </ul>
+
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="lessons.html">Lessons</a></li>
+				<li><a href="signin.html">Sign In</a></li>
+			  </ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+	
+	
+	<div class="content">
+		
+		<div class="container lessonSection">
+			<a href="lesson_2_3.html"><h4 class = "prev" >Previous<h4></a>
+			<a href="lesson_2_tasks.html"><h4 class = "next" >Next<h4></a>
+		
+			<h1>Creating A Dice Simulator</h1>
+			
+			<div class="lessonVid">
+					<iframe width="560" height="315" src="https://youtu.be/uS30BJ23xXg frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			
+			<h3>Introduction</h3>
+			
+			<p>
+				In this tutorial we’re going to build a dice roll simulator together before giving you tasks to complete on your own using the things you’ve learned so far, and giving you hints of new things you can research on your own.
+			</p>
+			
+			<h3>Outline</h3>
+			
+			<p>
+				There are several things we need to make for this program. Were going to take the users name and store it in a variable, were going to use a variable to store the number rolled, we’re going to go over how to generate a random number, and finally were going to output everything in one line. If you think you can do this by yourself then feel free to give it a try, if you're not quite ready feel free to code along with the guide below.
+			</p>
+
+			<h3>Creating The Variables</h3>
+
+			<p>
+				Okay so the first step to making a program like this is by evaluating what variables we’re going to need. Obviously for a lot of programs you probably won’t think of all of them ahead of time but for a simple program like this its relatively easy. We know we have to pieces of data that were gonna need to store, and that they’re likely to change everytime we run the program. So we’re gonna need to create a string variables for the users name, as well as a variable to store an integer that will be the number the user rolled.
+				<br><br><img class = "lessonIMG" src = "lesson_images/section2/image4_1.PNG"><br><br>
+				Now we know that the userName has to be input by the user so we have to make the variable an input like we learnt in last lesson. Try to add a fun caption like “Please Enter Your Name: “ or “Give Me Your Name and Hail Satan”.
+				<br><br><img class = "lessonIMG" src = "lesson_images/section2/image4_2.PNG"><br><br> 
+			</p>
+
+			<h3>Generating a Random Number</h3>
+			
+			<p>
+				To Generate a random number were going to use something called a library. A library, simply put is a set of code that you can use so you don’t have to write it yourself. These are usually for some more complicated procedures like generating random numbers, and complex mathmatical functions. For this were using one of pythons inbuilt libraries called “Random”. The syntax for using libraries in python is really easy. Its simply the keyword import followed by the name of your library, in this case random. This must be placed at the top of the python file though, before any code occurs so the interpreter knows where its getting the rest of the code from beforeyou call it. 
+				Now we can use any of the functions provided by the random library. This provides many functions but the one were using today, and the one you’ll probably use the most often, is the randint function. This generates a random integer. You can call functions from libraries you've imported by first typing the name of the library, in this case, random, followed by a period, and then the name of the function, followed by 2 brackets. So in this case it should look something this   “random.randint()”. The reason for the brackets is because in python all function calls require brackets. These contain  the “arguments” for the function. Basically any data that the function relies on to operate. So in this case the randint function requires 2 arguments. A starting number and an end number. The function uses this as a range to generate a number within. So if you put in the number 100 and 102, the only numbers it could generate are 101 and 102. The reason it can’t generate the number 100 is that the function starts at the number after the first argument. So in this case we want our range of numbers to be between 1 and 6, since we are trying to simulate a 6 sided die. So for that we want our arguments to be 0 and 6. We Write these inside the parentheses, separating them with a comma. So far your code should look like the code below.
+				<br><br><img class = "lessonIMG" src = "lesson_images/section2/image4_3.PNG"><br><br> 
+			</p>
+
+			<h3>Outputting The Result</h3>
+			
+			<p>
+				So we have our players name, we have a randomly generated number between 1 and 6, now all we need is a way to inform the player of the number they've rolled. We could just be lazy and have a print statement that outputs the randomly generated number with no context, but that's not fun for us, or the user, so let's personalise that message.
+				We can put several items into one print statement using something called string concatenation. THis is basically just combining different strings together. So if you had the string “cat “ and the string “in the hat”, concatenating them would result in the one string “cat in the hat”, were going to do a similar thing with our print statement. Start by writing out the start of a print statement to print the users name. So that would look like print(userName). Now inside the brackets were gonna use the operator for string concatenation which is “+” to add the string “ rolled a “. Finally we need to add the random number but we can’t just pass an integer as an argument that requires the type be a string. Luckily we can use the function “str” to convert the integer to a string so that we can concatenate it. It works really simply just use the function str() with the argument you want to convert to a string inside the brackets. In this case it's our numRolled variable. So In the end you should have something like this, print(userName + “ rolled a “ + str(numRolled). Try running the code and see what result you have. Now try running it again to make sure the number is being generated randomly. 
+				<br><br><img class = "lessonIMG" src = "lesson_images/section2/image4_4.PNG"><br><br> 
+			</p>
+
+			<h3>Conclusion</h3>
+			
+			<p>
+				There you have it. You built your first actually semi-useful program. We will update this program at the end of the next module to improve its functionality but for now why don’t you try to complete some of the next sections exercises before moving on to the next module.  
+			</p>
+
+			
+
+			
+	
+
+
+	
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+		  <h3>Code-Otter</h3>
+		  	<div class="socialLinks">
+		 	 <i class="fab fa-facebook"></i>
+		 	 <i class="fab fa-twitter-square"></i>
+		 	 <i class="fab fa-google-plus-square"></i>
+		 	 <i class="fas fa-envelope-square"></i>
+			</div>
+		</div>
+	  </footer>
+
+
+
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+	
+</body>
+</html>
